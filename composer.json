@@ -9,7 +9,9 @@
         }
     ],
     "require": {
-        "php": "^8.0",
+        "php": "^8.0"
+    },
+    "require-dev": {
         "squizlabs/php_codesniffer": "4.0.x-dev"
     },
     "autoload": {
