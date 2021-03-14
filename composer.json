@@ -1,0 +1,22 @@
+{
+    "name": "genealabs/php-coding-standards",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mike Bronner",
+            "email": "hello@genealabs.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "squizlabs/php_codesniffer": "4.0.x-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "GeneaLabs\\PhpCodingStandards\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
