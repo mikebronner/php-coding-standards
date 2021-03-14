@@ -22,7 +22,6 @@ class EmptyLineAroundControlStructureSniff implements Sniff
             T_FOR,
             T_FOREACH,
             T_SWITCH,
-            T_MATCH,
             T_TRY,
             T_CATCH,
             T_FINALLY,
