@@ -3,7 +3,9 @@
     <description>GeneaLabs coding standards.</description>
     <arg name="tab-width" value="4"/>
     <rule ref="GeneaLabs"/>
-    <rule ref="PSR1"/>
+    <rule ref="PSR1">
+        <exclude name="PSR2.ControlStructures.ControlStructureSpacing.SpacingAfterOpenBrace"/>
+    </rule>
     <rule ref="PSR12">
         <exclude name="PSR12.Classes.ClassInstantiation.MissingParentheses"/>
     </rule>
