@@ -1,7 +1,7 @@
 # GeneaLabs PHP Coding Standards
 Custom PHPCS sniffs that support all our coding standards.
 
-## Customer Rules
+## Custom Rules
 ### Type Hinting
 - Method Parameter Type Hints
 - Method Return Type Hints
