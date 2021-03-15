@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <ruleset name="GeneaLabs">
     <rule ref="PSR1"/>
-    <rule ref="PSR2"/>
+    <rule ref="PSR2">
+        <exclude name="PSR2.ControlStructures.ControlStructureSpacing.SpacingAfterOpenBrace"/>
+    </rule>
     <rule ref="PSR12">
         <exclude name="PSR12.Classes.ClassInstantiation.MissingParentheses"/>
     </rule>
     <rule ref="Internal.NoCodeFound"/>
     <rule ref="Zend.Files.ClosingTag"/>
-    <rule ref="../../../../slevomat/coding-standard/SlevomatCodingStandard/ruleset.xml"/>
+    <rule ref="SlevomatCodingStandard"/>
 </ruleset>
