@@ -1,17 +1,6 @@
 <?xml version="1.0"?>
 <ruleset name="genealabs-rules">
     <description>GeneaLabs coding standards.</description>
-    <arg name="tab-width" value="4"/>
+
     <rule ref="GeneaLabs"/>
-    <rule ref="PSR1">
-        <exclude name="PSR2.ControlStructures.ControlStructureSpacing.SpacingAfterOpenBrace"/>
-    </rule>
-    <rule ref="PSR12">
-        <exclude name="PSR12.Classes.ClassInstantiation.MissingParentheses"/>
-    </rule>
-    <rule ref="Internal.NoCodeFound"/>
-    <rule ref="Zend.Files.ClosingTag"/>
-    <rule ref="Zend.NamingConventions">
-        <exclude name="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
-    </rule>
 </ruleset>

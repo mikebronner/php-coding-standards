@@ -7,7 +7,4 @@
     </rule>
     <rule ref="Internal.NoCodeFound"/>
     <rule ref="Zend.Files.ClosingTag"/>
-    <rule ref="Zend.NamingConventions">
-        <exclude name="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
-    </rule>
 </ruleset>
