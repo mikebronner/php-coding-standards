@@ -7,4 +7,5 @@
     </rule>
     <rule ref="Internal.NoCodeFound"/>
     <rule ref="Zend.Files.ClosingTag"/>
+    <rule ref="../../../../slevomat/coding-standard/SlevomatCodingStandard/ruleset.xml"/>
 </ruleset>
