@@ -9,5 +9,7 @@
     </rule>
     <rule ref="Internal.NoCodeFound"/>
     <rule ref="Zend.Files.ClosingTag"/>
-    <rule ref="SlevomatCodingStandard"/>
+    <rule ref="SlevomatCodingStandard">
+        <exclude name="SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingTraversableTypeHintSpecification"/>
+    </rule>
 </ruleset>
