@@ -11,8 +11,6 @@
     "require": {
         "php": "^8.0",
         "slevomat/coding-standard": "^6.4"
-    },
-    "require-dev": {
         "squizlabs/php_codesniffer": "^3.5"
     },
     "autoload": {
