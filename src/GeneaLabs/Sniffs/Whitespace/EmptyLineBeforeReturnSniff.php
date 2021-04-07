@@ -7,9 +7,9 @@ use PHP_CodeSniffer\Sniffs\Sniff;
 
 class EmptyLineBeforeReturnSniff implements Sniff
 {
-    protected File $file;
-    protected int $stackPointer = -1;
-    protected array $tokens = [];
+    protected $file;
+    protected $stackPointer = -1;
+    protected $tokens = [];
 
     public function register(): array
     {
@@ -19,7 +19,7 @@ class EmptyLineBeforeReturnSniff implements Sniff
         ];
     }
 
-    public function process(File $phpcsFile, $stackPointer): void
+    public function process($phpcsFile, $stackPointer): void
     {
         $this->file = $phpcsFile;
         $this->stackPointer = $stackPointer;
