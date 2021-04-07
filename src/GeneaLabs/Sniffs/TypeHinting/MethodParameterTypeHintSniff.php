@@ -12,8 +12,8 @@ use ReflectionParameter;
 class MethodParameterTypeHintSniff implements Sniff
 {
     protected $file;
-    protected int $stackPointer = -1;
-    protected array $tokens = [];
+    protected $stackPointer = -1;
+    protected $tokens = [];
 
     public function register(): array
     {
@@ -22,7 +22,7 @@ class MethodParameterTypeHintSniff implements Sniff
         ];
     }
 
-    public function process(File $phpcsFile, $stackPointer): void
+    public function process($phpcsFile, $stackPointer): void
     {
         $this->file = $phpcsFile;
         $this->stackPointer = $stackPointer;
@@ -30,8 +30,10 @@ class MethodParameterTypeHintSniff implements Sniff
         $this->lintMethodSignature();
     }
 
-    protected function doesInterfaceParameterNotHaveTypeHint(string $parameterName, int $parameterIndex): bool
-    {
+    protected function doesInterfaceParameterNotHaveTypeHint(
+        $parameterName,
+        $parameterIndex
+    ): bool {
         $methodName = $this->file->getDeclarationName($this->stackPointer);
         $parameterName = trim($parameterName, "$ ");
         $className = $this->getFullyQualifiedClassName();
