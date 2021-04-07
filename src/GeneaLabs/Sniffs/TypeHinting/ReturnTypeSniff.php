@@ -48,7 +48,7 @@ class ReturnTypeSniff implements Sniff
             return;
         }
 
-        if (! str_contains($this->getMethodLine(), ":")) {
+        if (strpos($this->getMethodLine(), ":") !== false) {
             $this->file->addError(
                 "Missing return type.",
                 $this->tokens[$this->stackPointer]["parenthesis_closer"],
