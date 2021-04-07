@@ -11,7 +11,7 @@ use ReflectionParameter;
 
 class MethodParameterTypeHintSniff implements Sniff
 {
-    protected File $file;
+    protected $file;
     protected int $stackPointer = -1;
     protected array $tokens = [];
 
@@ -117,6 +117,7 @@ class MethodParameterTypeHintSniff implements Sniff
             $index++;
         }
 
+        $matches = [];
         preg_match('/\((.*?)\)/', $line, $matches);
         $line = $matches[1]
             ?? "";
