@@ -7,9 +7,9 @@ use PHP_CodeSniffer\Sniffs\Sniff;
 
 class EmptyLineAroundControlStructureSniff implements Sniff
 {
-    protected File $file;
-    protected int $stackPointer = -1;
-    protected array $tokens = [];
+    protected $file;
+    protected $stackPointer = -1;
+    protected $tokens = [];
 
     public function register(): array
     {
@@ -28,7 +28,7 @@ class EmptyLineAroundControlStructureSniff implements Sniff
         ];
     }
 
-    public function process(File $phpcsFile, $stackPointer): void
+    public function process($phpcsFile, $stackPointer): void
     {
         $this->file = $phpcsFile;
         $this->stackPointer = $stackPointer;
@@ -38,7 +38,7 @@ class EmptyLineAroundControlStructureSniff implements Sniff
         $this->lintAfterControlStructure();
     }
 
-    protected function isFollowingContentPermitted(string $content): bool
+    protected function isFollowingContentPermitted($content): bool
     {
         $permittedControlStructures = [
             "if" => [
@@ -102,7 +102,6 @@ class EmptyLineAroundControlStructureSniff implements Sniff
             $newlines >= 2
             && $nextToken === "}"
         ) {
-            $extraneousLines = $newlines - 1;
             $this->file->addWarning(
                 "There should be no empty lines after control "
                     . "structures at the end of a code block.",
@@ -144,7 +143,6 @@ class EmptyLineAroundControlStructureSniff implements Sniff
             $newlines >= 2
             && $previousContent === "{"
         ) {
-            $extraNewLines = $newlines - 1;
             $this->file->addWarning(
                 "There should be no empty line(s) at the beginning of a block before control structure.",
                 $this->stackPointer,
