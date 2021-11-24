@@ -9,7 +9,7 @@
     </rule>
     <rule ref="Internal.NoCodeFound"/>
     <rule ref="Zend.Files.ClosingTag"/>
-    <rule ref="NamingConventionAnalyzer"/>	
+    <rule ref="Squiz.NamingConventions.ValidVariableName"/>
     <rule ref="SlevomatCodingStandard">
         <exclude name="SlevomatCodingStandard.Classes.DisallowConstructorPropertyPromotion.DisallowedConstructorPropertyPromotion"/>
         <exclude name="SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces.NoEmptyLineAfterOpeningBrace"/>
