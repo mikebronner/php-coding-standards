@@ -12,7 +12,7 @@
         "php": "^8.0",
         "slevomat/coding-standard": "^7.0",
         "squizlabs/php_codesniffer": "^3.5",
-        "ocreaper/naming-convention-analyzer": "^0.4.1"
+        "ocreaper/naming-convention-analyzer": "*"
     },
     "autoload": {
         "psr-4": {
