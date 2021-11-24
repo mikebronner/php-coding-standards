@@ -8,7 +8,7 @@
             "email": "hello@genealabs.com"
         }
     ],
-    "require-dev": {
+    "require": {
         "php": "^8.0",
         "slevomat/coding-standard": "^7.0",
         "squizlabs/php_codesniffer": "^3.5",
