@@ -10,7 +10,7 @@
     ],
     "require": {
         "php": "^8.0",
-        "slevomat/coding-standard": "dev-php81@dev",
+        "slevomat/coding-standard": "dev-master@dev",
         "squizlabs/php_codesniffer": "^3.5"
     },
     "autoload": {
