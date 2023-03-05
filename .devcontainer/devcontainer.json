@@ -1,0 +1,87 @@
+// https://aka.ms/devcontainer.json
+{
+    "name": "Existing Docker Compose (Extend)",
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
+    "service": "laravel.test",
+    "workspaceFolder": "/var/www/html",
+    "customizations": {
+        "vscode": {
+            "settings": {},
+            "extensions": [
+                "adrianwilczynski.alpine-js-intellisense",
+                "amiralizadeh9480.laravel-extra-intellisense",
+                "austenc.laravel-blade-spacer",
+                "beyondcode.tinkerwell",
+                "bradlc.vscode-tailwindcss",
+                "christian-kohler.npm-intellisense",
+                "christian-kohler.path-intellisense",
+                "cierra.livewire-vscode",
+                "codingyu.laravel-goto-view",
+                "davidanson.vscode-markdownlint",
+                "eamodio.gitlens",
+                "ecodes.vscode-phpmd",
+                "editorconfig.editorconfig",
+                "ericcheng.codesongclear",
+                "faelv.composer-companion",
+                "file-icons.file-icons",
+                "georgykurian.laravel-ide-helper",
+                "github.codespaces",
+                "github.vscode-pull-request-github",
+                "heybourn.headwind",
+                "irongeek.vscode-env",
+                "mahmoudshahin.laravel-routes",
+                "martybegood.single-editor-tabs",
+                "mechatroner.rainbow-csv",
+                "mehedidracula.php-namespace-resolver",
+                "mikestead.dotenv",
+                "mohamedbenhida.laravel-intellisense",
+                "mrmlnc.vscode-duplicate",
+                "ms-vscode-remote.remote-ssh-edit",
+                "ms-vscode-remote.remote-ssh",
+                "naoray.laravel-goto-components",
+                "oderwat.indent-rainbow",
+                "pcbowers.alpine-intellisense",
+                "redhat.vscode-yaml",
+                "rifi2k.format-html-in-php",
+                "shevaua.phpcs",
+                "shufo.vscode-blade-formatter",
+                "sperovita.alpinejs-syntax-highlight",
+                "streetsidesoftware.code-spell-checker",
+                "syler.ignore",
+                "teabyii.ayu",
+                "usernamehw.errorlens",
+                "vincaslt.highlight-matching-tag",
+                "wakatime.vscode-wakatime",
+                "wongjn.php-sniffer",
+                "WakaTime.vscode-wakatime",
+                "MehediDracula.php-namespace-resolver",
+                "bmewburn.vscode-intelephense-client",
+                "DavidAnson.vscode-markdownlint",
+                "MahmoudShahin.laravel-routes",
+                "Syler.ignore",
+                "IronGeek.vscode-env",
+                "EditorConfig.EditorConfig",
+                "huibizhang.codesnap-plus",
+                "m4ns0ur.base64"
+            ]
+        }
+    },
+    "remoteUser": "sail",
+    "postCreateCommand": "chown -R 1000:1000 /var/www/html",
+    "forwardPorts": [
+        80,
+        5432
+    ],
+    "portsAttributes": {
+        "80": {
+            "label": "HTTP"
+        },
+        "5432": {
+            "label": "Postgres"
+        }
+    }
+    // "runServices": [],
+    // "shutdownAction": "none",
+}
